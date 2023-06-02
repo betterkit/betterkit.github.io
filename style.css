@@ -73,6 +73,7 @@ a{text-decoration:none;color: #423c3c;}
 .list-icon{
     width: 42px;
     height: 42px;
+    display: block;
     border-radius: 10px;
 }
 .txt {margin-left: 0.5rem !important;}
@@ -81,102 +82,3 @@ a{text-decoration:none;color: #423c3c;}
 .arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}
 
 .footer{height:40px;margin-top: 20px;line-height: 40px;text-align: center;background: #efefef;border-radius: 6px;}
-
-
-.nice-card{
-    height:180px;
-    background-color: #07C160;
-}
-.news-card{
-    border-radius: 8px;
-    /*background-color: #fefefe;*/
-}
-.news-url{
-    text-decoration:none;
-    color: #423c3c;
-    font-size: 14px;
-    display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;overflow: hidden;
-}
-.news-b{
-    height: 80px;
-}
-.wj-url{
-    text-align: center;
-}
-
-
-.url-btn{
-    white-space: nowrap;
-    font-size: 12px;
-}
-.nice-name{
-    font-size: 14px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.nice-desc{
-    font-size: 12px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.nice-list-icon{
-    width: 42px;
-    height: 42px;
-    border-radius: 10px;
-}
-
-
-
-.site a{
-    color: #3c3c3c;
-    font-size: 16px;
-}
-.title h2{
-    font-size: 16px;
-    color: #585858;
-}
-.desc{
-	color: ##515151;
-    font-size: 12px;
-    height: 52px;
-    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient: vertical;overflow: hidden;
-}
-.url-item{
-    padding: 4px;
-}
-.page-button{
-    font-size: 14px;
-    background-color: #fefefe;
-}
-.float-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.float-btn button {
-  width: 120px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 12px 12px;
-  font-size: 16px;
-  border-radius: 24px;
-  cursor: pointer;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.float-btn button:hover {
-  background-color: #3e8e41;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
-}
-.float-btn-hide {
-  display: none;
-}
