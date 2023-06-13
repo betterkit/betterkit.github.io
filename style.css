@@ -83,5 +83,5 @@ a{text-decoration:none;color: #423c3c;}
 .ai-desc{font-size: 12px;color: #a5a3a3;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;overflow: hidden;}
 .arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}
 
-footer{height:40px;margin-top: 20px;line-height: 40px;text-align: center;color: #999;border: 1px dashed #efefef;border-radius: 6px;background: #eee}
+footer{min-height:40px;margin-top: 20px;line-height:40px;text-align: center;color: #999;border: 1px dashed #efefef;border-radius: 6px;background: #eee}
 footer a{color: #999}.footer a:hover{color: #009;text-decoration: underline;}
