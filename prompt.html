@@ -1,0 +1,750 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<base target="_blank">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name='viewport'content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+<title>指令Prompt - 人工智能网址导航</title>
+<meta name="keywords" content="ai指令,ai教程,Prompt,提示工程" />
+<meta name="description" content="人工智能网址导航网站大全，ChatGPT指令、图片生成指令、Prompt工具集合、免费高质量的Prompts集合等，帮助你使用AI工具" />
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="https://hm.baidu.com/hm.js?1a49e58055a62016311777d33eeddf60"></script>
+<script type="text/javascript" src="load.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-logo" href="/" target="_self">Bettersoft</a>
+    </div>
+</nav>
+<div class="container">
+    <div class="row menu-card">
+        <div class="menu-item">
+            <a href="chat.html" target="_self" class="menu-url" title="AI对话">
+                <img src="img/draw.png" class="menu-icon" alt="AI对话图标">
+                <span>对话</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="draw.html" target="_self" class="menu-url" title="AI绘画">
+                <img src="img/aikey.png" class="menu-icon" alt="AI绘画图标">
+                <span>绘画</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="write.html" target="_self" class="menu-url" title="AI写作">
+                <img src="img/aikey.png" class="menu-icon" alt="AI写作图标">
+                <span>写作</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="design.html" target="_self" class="menu-url" title="AI设计">
+                <img src="img/aikey.png" class="menu-icon" alt="AI设计图标">
+                <span>设计</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="work.html" target="_self" class="menu-url" title="AI办公">
+                <img src="img/aikey.png" class="menu-icon" alt="AI办公图标">
+                <span>办公</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="image.html" target="_self" class="menu-url" title="AI图像">
+                <img src="img/aikey.png" class="menu-icon" alt="AI图像">
+                <span>图像</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="video.html" target="_self" class="menu-url" title="AI视频">
+                <img src="img/aikey.png" class="menu-icon" alt="AI视频图标">
+                <span>视频</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="audio.html" target="_self" class="menu-url" title="AI音频">
+                <img src="img/aikey.png" class="menu-icon" alt="AI音频图标">
+                <span>音频</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="code.html" target="_self" class="menu-url" title="AI编程">
+                <img src="img/aikey.png" class="menu-icon" alt="AI编程图标">
+                <span>编程</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="prompt.html" target="_self" class="menu-url menu-key" title="AI指令">
+                <img src="img/aikey.png" class="menu-icon" alt="AI指令图标">
+                <span>指令</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="business.html" target="_self" class="menu-url" title="商务">
+                <img src="img/aikey.png" class="menu-icon" alt="商务">
+                <span>商务</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="live.html" target="_self" class="menu-url" title="生活">
+                <img src="img/aikey.png" class="menu-icon" alt="生活">
+                <span>生活</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="plus.html" target="_self" class="menu-url" title="扩展">
+                <img src="img/aikey.png" class="menu-icon" alt="扩展">
+                <span>发现</span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="ai-item">
+            <a href="https://publicprompts.art/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://publicprompts.art/wp-content/uploads/2022/09/PublicPromptLogo_Trans-1-150x150.png">
+                <div class="txt">
+                    <div class="ai-name">PublicPrompts</div>
+                    <div class="ai-desc">免费高质量的Prompts集合</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://learningprompt.wiki/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://learningprompt.wiki/img/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Learning Prompt</div>
+                    <div class="ai-desc">免费Prompt Engineering教程</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.clickprompt.org/zh-CN/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.clickprompt.org/favicon/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">ClickPrompt</div>
+                    <div class="ai-desc">简化你的 Prompt 设计之旅</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://teachprompt.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://teachprompt.com/apple-touch-icon.png">
+                <div class="txt">
+                    <div class="ai-name">TeachPrompt</div>
+                    <div class="ai-desc">人人都是提示工程师</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://prompthero.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="icon/prompthero.png">
+                <div class="txt">
+                    <div class="ai-name">PromptHero</div>
+                    <div class="ai-desc">免费的 Prompt 搜索引擎</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.icihun.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.icihun.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">词魂</div>
+                    <div class="ai-desc">AI绘画使用的AI提示词</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://analogenie.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://analogenie.com/icons8-quill-pen-24.png">
+                <div class="txt">
+                    <div class="ai-name">analogies</div>
+                    <div class="ai-desc">Write better with analogies</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://prompts.chat/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="img/aikey.png">
+                <div class="txt">
+                    <div class="ai-name">Awesome</div>
+                    <div class="ai-desc">ChatGPT Prompts</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptart.cc/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptart.cc/logo.ico">
+                <div class="txt">
+                    <div class="ai-name">PromptArt</div>
+                    <div class="ai-desc">AI绘画素材和灵感库</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.ai016.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.ai016.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">绘ai</div>
+                    <div class="ai-desc">ai绘图提示词关键词描述词咒语分享</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.ai-art.com.cn/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.ai-art.com.cn/template/aiart/favicon/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Ai-Art</div>
+                    <div class="ai-desc">Ai画廊Ai作品精选</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.hayo.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.hayo.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Hayo</div>
+                    <div class="ai-desc">通过HayoAI艺术、新闻等</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptvine.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptvine.com/images/favs/apple-touch-icon-57x57.png">
+                <div class="txt">
+                    <div class="ai-name">PromptVine</div>
+                    <div class="ai-desc">ChatGPT提示库</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.imiprompt.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.imiprompt.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">IMI Prompt</div>
+                    <div class="ai-desc">Midjourney提示生成器</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.krea.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.krea.ai/favicon.png">
+                <div class="txt">
+                    <div class="ai-name">Krea</div>
+                    <div class="ai-desc">探索AI生成的图像并创建集合</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://creativai.io/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://creativai.io/storage/2/seeds-creativai_favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">CreativAI</div>
+                    <div class="ai-desc">帮助您在几秒钟内创建内容</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://generrated.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://generrated.com/apple-touch-icon.png">
+                <div class="txt">
+                    <div class="ai-name">Generrated</div>
+                    <div class="ai-desc">基于DALL·E 2的图片生成指令</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://chatgpt-prompt-apps.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://chatgpt-prompt-apps.com/logo.png">
+                <div class="txt">
+                    <div class="ai-name">Prompt Apps</div>
+                    <div class="ai-desc">来自提示的即用型生成 AI 应用</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.aiprm.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.aiprm.com/static/logo-b7f62870ffde4c1f85984d2fb7d3748d.png">
+                <div class="txt">
+                    <div class="ai-name">AIPRM</div>
+                    <div class="ai-desc">SEO和SaaS文案写作的ChatGPT Prompts浏览器扩展</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://prompt.noonshot.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://prompt.noonshot.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">MJ Prompt Tool</div>
+                    <div class="ai-desc">MidJourney Prompt帮助工具</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://tools.saxifrage.xyz/prompt" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://tools.saxifrage.xyz/favicon.png">
+                <div class="txt">
+                    <div class="ai-name">Visual Prompt Builde</div>
+                    <div class="ai-desc">可视化AI提示语选择和搭建</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptden.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptden.com/icon.png">
+                <div class="txt">
+                    <div class="ai-name">PromptDen</div>
+                    <div class="ai-desc">提示工程分享的社区</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.jrnylist.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.jrnylist.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Jrnylist</div>
+                    <div class="ai-desc">MJ提示助手</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptbase.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptbase.com/assets/favicon/apple-touch-icon.png">
+                <div class="txt">
+                    <div class="ai-name">PromptBase</div>
+                    <div class="ai-desc">AI Prompts集合交易市场</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.builtwithaiclub.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://image.typedream.com/cdn-cgi/image/width=384/https://api.typedream.com/v0/document/public/1cc07d01-289f-47c8-869b-5e83c8636adf/2OVtjctYxOfFpZHxyouiVRSAxq8_Vector.png">
+                <div class="txt">
+                    <div class="ai-name">Build With AI Club</div>
+                    <div class="ai-desc">AI学习和无代码开发</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://markprompt.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://markprompt.com/static/favicons/favicon.svg">
+                <div class="txt">
+                    <div class="ai-name">Markprompt</div>
+                    <div class="ai-desc">为Markdown文档构建GPT-4提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://learnprompting.org/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://learnprompting.org/img/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Learn Prompting</div>
+                    <div class="ai-desc">与人工智能通信的免费开源课程</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptlayer.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptlayer.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">PromptLayer</div>
+                    <div class="ai-desc">记录、跟踪和调试您的提示和OpenAI API请求</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://keywordseverywhere.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://keywordseverywhere.com/apple-touch-icon.png">
+                <div class="txt">
+                    <div class="ai-name">Keywords Everwhere</div>
+                    <div class="ai-desc">关键字研究和 ChatGPT 提示浏览器扩展</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.ordinarypeopleprompts.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://softr-prod.imgix.net/applications/1e17aeb4-c514-4e0e-a112-fa15fffdd3c7/assets/d5a1cb88-9eae-491d-84a5-c43c4d48bfdf.png">
+                <div class="txt">
+                    <div class="ai-name">Ordinary People Prompts</div>
+                    <div class="ai-desc">创建、投票和评论您最喜爱的 AI 提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.promptplays.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://assets-global.website-files.com/63ec001959cee67a8ae7c5f3/63f416d41c14d800c3fa7b63_PP%20-%20Color%20no%20text%2032x32.png">
+                <div class="txt">
+                    <div class="ai-name">PromptPlays</div>
+                    <div class="ai-desc">AI-Infused Automations</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://optimist.varied.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://optimist.varied.ai/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Optimist</div>
+                    <div class="ai-desc">构建可靠的提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptstorm.app/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptstorm.app/favicon.png">
+                <div class="txt">
+                    <div class="ai-name">Prompt Storm</div>
+                    <div class="ai-desc">Improved ChatGPT with managed prompts</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://vitalentum.net/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://vitalentum.net/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Vitalentum</div>
+                    <div class="ai-desc">终极内容创作中心</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://orquesta.cloud/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://framerusercontent.com/images/mqR9Nc5bPwub9FnH8IeYWxl8AoY.png">
+                <div class="txt">
+                    <div class="ai-name">Orquesta AI Prompts</div>
+                    <div class="ai-desc">使产品团队能够进行工程设计</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.theresapromptforthat.xyz/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.theresapromptforthat.xyz/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">There's a Prompt for that</div>
+                    <div class="ai-desc">轻松为流行的 AI 工具生成完美的提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://templify.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://templify.ai/uploads/brand/ewU66p0WSRuyh8DoiFuNRbpz2dpPc3l5PhUBxfXo.png">
+                <div class="txt">
+                    <div class="ai-name">Templify.ai</div>
+                    <div class="ai-desc">AI驱动的内容生成器</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptomania.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptomania.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">PromptoMANIA</div>
+                    <div class="ai-desc">创意艺术提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://adaptify.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://adaptify.ai/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">AI Templates</div>
+                    <div class="ai-desc">通过提示提高个体创业者的生产力</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.promptflat.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://softr-prod.imgix.net/applications/0d11eeea-a6b5-43e4-b0b1-e5aac9079cde/assets/0af316b3-7bbc-4ecc-810b-908181bea8b1.png">
+                <div class="txt">
+                    <div class="ai-name">PromptFlat</div>
+                    <div class="ai-desc">获取1000个类别的高质量提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://pai.dittin.cn/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://pai.dittin.cn/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">提厅提示词</div>
+                    <div class="ai-desc">提示词工程</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://prompthub.nl/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://prompthub.nl/wp-content/uploads/2023/02/logo-profile-pic-fb-300x300.png">
+                <div class="txt">
+                    <div class="ai-name">Prompthub</div>
+                    <div class="ai-desc">发现最好的荷兰语聊天GPT提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://chatx.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://chatx.ai/wp-content/uploads/2022/12/ico-icon-main-983d.png">
+                <div class="txt">
+                    <div class="ai-name">ChatX</div>
+                    <div class="ai-desc">适合所有人的免费提示市场</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptmetheus.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://promptmetheus.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Promptmetheus</div>
+                    <div class="ai-desc">聊天GPT提示工程工具包</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.easyprompt.xyz/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.easyprompt.xyz/logo.png">
+                <div class="txt">
+                    <div class="ai-name">EasyPrompt</div>
+                    <div class="ai-desc">更有效地互动的创新工具</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.promptvibes.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://softr-prod.imgix.net/applications/7de0a3ac-7528-4756-95b2-c7885e4c0964/assets/91bd17af-9205-4974-81ad-4e1022ca5e11.jpeg">
+                <div class="txt">
+                    <div class="ai-name">Prompt Vibes</div>
+                    <div class="ai-desc">发现和测试不同的聊天提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://prompbase.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://prompbase.com/img/fav.png">
+                <div class="txt">
+                    <div class="ai-name">PrompBase</div>
+                    <div class="ai-desc">Midjourney prompt Generator</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://clio.so/maker" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://clio.so/icon.png">
+                <div class="txt">
+                    <div class="ai-name">Clio</div>
+                    <div class="ai-desc">稳定的扩散提示助手</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.stealthgpt.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.stealthgpt.ai/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">StealthGPT</div>
+                    <div class="ai-desc">使用 AI，无需担心审查或被发现</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.steamship.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.steamship.com/favicon.svg">
+                <div class="txt">
+                    <div class="ai-name">Steamship</div>
+                    <div class="ai-desc">Steamship</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.promptbox.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://static.wixstatic.com/media/19929f_7a9edaa995174075af5db19f3827a893~mv2.png">
+                <div class="txt">
+                    <div class="ai-name">PromptBox</div>
+                    <div class="ai-desc">精美地组织您的提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.dallelist.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.dallelist.com/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Dallelist</div>
+                    <div class="ai-desc">使用DallE的图像和样式轻松生成提示</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://promptparadiseshop.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://cdn.shopifycdn.net/s/files/1/0724/0184/6546/files/favicon.png">
+                <div class="txt">
+                    <div class="ai-name">Prompt Paradise</div>
+                    <div class="ai-desc">提示天堂</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://franks.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://franks.ai/v1/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">Frank AI</div>
+                    <div class="ai-desc">AI驱动的搜索和内容创建引擎</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.prompt-genie.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://softr-prod.imgix.net/applications/17035dad-7535-4c3f-9f21-c5cadf6dcf98/assets/682e46ea-0520-40e3-939d-e4c866c9a6d6.png">
+                <div class="txt">
+                    <div class="ai-name">Prompt Genie</div>
+                    <div class="ai-desc">AI工具可帮助您编写更好的ChatGPT提示。</div>
+                </div>
+                <div class="arrow">></div>
+          </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.aishort.top/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.aishort.top/img/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">AI Short</div>
+                    <div class="ai-desc">让生产力加倍的ChatGPT快捷指令</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://175ai.cn/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://175ai.cn/ai.png">
+                <div class="txt">
+                    <div class="ai-name">一起玩Ai</div>
+                    <div class="ai-desc">AI绘画提示词助手</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://gptea.io/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://gptea.io/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">GpTea</div>
+                    <div class="ai-desc">ChatGPT Prompts Station and AI Community</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.aigodlike.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.aigodlike.com/public/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">AIGODLIKE</div>
+                    <div class="ai-desc">开源AI冒险社区</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.mbprompt.com/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.mbprompt.com/logo.png">
+                <div class="txt">
+                    <div class="ai-name">墨本</div>
+                    <div class="ai-desc">关键词助手</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://arthub.ai/" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://arthub.ai/favicon.ico">
+                <div class="txt">
+                    <div class="ai-name">ArtHub</div>
+                    <div class="ai-desc">Crowdsourced AI Art</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="xxxxxxxxxxx" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="xxxxxxxxxx">
+                <div class="txt">
+                    <div class="ai-name">xxxxxx</div>
+                    <div class="ai-desc">xxxxxxxxxxx</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="xxxxxxxxxxx" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="xxxxxxxxxx">
+                <div class="txt">
+                    <div class="ai-name">xxxxxx</div>
+                    <div class="ai-desc">xxxxxxxxxxx</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+        <div class="ai-item">
+            <a href="https://www.promptingguide.ai/zh" class="ai-item-a">
+                <img class="list-icon" src="img/lazyload.gif" data-src="https://www.promptingguide.ai/144-favicon.svg">
+                <div class="txt">
+                    <div class="ai-name">提示工程指南</div>
+                    <div class="ai-desc">Prompt Engineering Guide</div>
+                </div>
+                <div class="arrow">></div>
+            </a>
+        </div>
+    </div>
+</div>
+<footer class="container">
+    <script src="footer.js"></script>
+</footer>
+</body>
+</html>
