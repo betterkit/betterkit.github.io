@@ -1,2 +1,2 @@
 // JavaScript Document
-document.write('本站初建，欢迎提出您的意见和建议及提交AI应用，联系<a href="mailto:bettersoft@qq.com">bettersoft@qq.com</a>')
+document.write('<p>意见、建议、提交应用请电邮：<a href="mailto:bettersoft@qq.com">bettersoft@qq.com</a></p>')
