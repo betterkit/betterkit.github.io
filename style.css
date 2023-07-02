@@ -1,6 +1,6 @@
 *{box-sizing:border-box;}
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
-body{background-color: #f5f5f5;font-size:14px;}
+body{background-color: #f5f5f5;font-size:14px;font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;}
 ul,li{list-style: none;}
 @media (max-width: 576px) {
     .container {max-width: 576px;}
@@ -71,8 +71,8 @@ header h1{font-size:1.8em;font-weight: bold;color: #333;margin-left: 10px}
     background-color:#fff;
 }
 .icon{
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     display: block;
     border-radius: 10px;
 }
@@ -81,6 +81,6 @@ header h1{font-size:1.8em;font-weight: bold;color: #333;margin-left: 10px}
 .desc{font-size: 12px;color: #a5a3a3;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;overflow: hidden;}
 .arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}
 
-footer{min-height:40px;margin-top: 20px;line-height:40px;text-align:right;color: #999;border-radius: 6px;background: #eee}
+footer{min-height:40px;margin-top:20px;line-height:40px;text-align:right;border-top:1px solid #ddd;color:#999;background:#eee}
 footer p{padding-right:10px;}
 footer a{color: #999}.footer a:hover{color: #009;text-decoration: underline;}
