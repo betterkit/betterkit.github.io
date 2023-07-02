@@ -4,7 +4,7 @@ body{background-color: #f5f5f5;font-size:14px;}
 ul,li{list-style: none;}
 @media (max-width: 576px) {
     .container {max-width: 576px;}
-    .menui{width:25%;min-width:90px}
+    .menui{width:25%;min-width:88px}
     .ai-item{width:99%;}
 }
 @media (min-width: 577px) and (max-width:760px) {
