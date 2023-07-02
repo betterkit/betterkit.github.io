@@ -52,7 +52,7 @@ header{
     z-index: 999;
     border-bottom: 1px solid #eee;
 }
-header h1{font-size:26px;font-weight: bold;color: #333;margin-left: 10px}
+header h1{font-size:1.8em;font-weight: bold;color: #333;margin-left: 10px}
 /*nav menu*/
 .menu-card{
     margin-top:55px;
@@ -61,11 +61,11 @@ header h1{font-size:26px;font-weight: bold;color: #333;margin-left: 10px}
     margin-bottom: 4px;
 }
 .menu,.item{padding: 2px;}
-.menu a{display:flex;border-radius: 6px;background-color: #fff;padding-left: 15px;width: 100%;letter-spacing:2px;border-bottom:1px solid #fff;}
+.menu a{display:flex;border-radius:4px;background-color: #fff;padding-left: 15px;width: 100%;letter-spacing:2px;border-bottom:1px solid #fff;}
 .menu .current{background:#e6ffe6;border-bottom: 1px solid #ccc;}
 /*content items*/
 .link{
-    border-radius: 6px;
+    border-radius:4px;
     display: flex;
     width: 100% !important;height: 100% !important;padding: 0.5rem !important;
     background-color:#fff;
