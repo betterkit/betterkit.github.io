@@ -1,6 +1,6 @@
 // loading ing
 window.onload = () => {
-    var eles = document.querySelectorAll('.list-icon'); // 获取所有列表元素
+    var eles = document.querySelectorAll('.icon'); // 获取所有列表元素
     
     // 监听回调
     var callback = (entries) => {
