@@ -3,12 +3,12 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,s
 body{background-color: #f5f5f5;font-size:14px;font-family: 'Microsoft YaHei', "Space Grotesk", sans-serif;}
 ul,li{list-style: none;}
 @media (max-width: 576px) {
-    .container {max-width: 576px;min-height:50px;}
+    .container {max-width: 576px;}
     .menu{width:25%;}
     .item{width:100%;}
 }
 @media (min-width: 577px) and (max-width:760px) {
-    .container {max-width:760px;min-height:40px;}
+    .container {max-width:760px;}
     .menu{width:25%;}
     .item{width:50%;}
 }
