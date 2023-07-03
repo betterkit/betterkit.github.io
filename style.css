@@ -41,8 +41,7 @@ a{text-decoration:none;color: #423c3c;}
 /*header*/
 header{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0;left: 0;
     width: 100%;line-height: 80px;
     background-color:rgba(255, 255, 255, 0.6);
     display: flex;
@@ -51,7 +50,7 @@ header{
     z-index: 999;
     border-bottom: 1px solid #eee;
 }
-header .logo{float:left;font-size:1.8em;font-weight: bold;margin-left: 10px}
+header .logo{float:left;font-size:1.8em;font-weight: bold;padding-left:5px}
 header .sort{float:right;padding-right: 5px;}
 /*nav menu*/
 .menu-card{
