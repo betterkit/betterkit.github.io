@@ -1,7 +1,6 @@
-// loading ing
+// loading img
 window.onload = () => {
     var eles = document.querySelectorAll('.icon'); // 获取所有列表元素
-    
     // 监听回调
     var callback = (entries) => {
         entries.forEach(item => {
@@ -23,7 +22,6 @@ window.onload = () => {
         })
     }
     var observer = new IntersectionObserver(callback);
-
     // 列表元素加入监听
     eles.forEach(item => {
         observer.observe(item);
