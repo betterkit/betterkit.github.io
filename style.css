@@ -47,7 +47,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+    box-shadow: 0px 1px 3px #eee;
     border-bottom: 1px solid #eee;
 }
 header .logo{float:left;font-size:1.8em;font-weight: bold;padding-left:5px}
