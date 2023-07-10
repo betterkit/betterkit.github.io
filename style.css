@@ -81,5 +81,5 @@ header .sort{float:right;padding-right: 5px;}
 .arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}
 
 footer{margin-top:20px;line-height:80px;color:#666;background:#fff}
-footer p{padding-right:10px;}
+footer p{padding:0 5px}
 footer a{color: #666}.footer a:hover{color: #009;text-decoration: underline;}
