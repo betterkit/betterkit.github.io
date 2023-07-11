@@ -59,7 +59,7 @@ header .sort{float:right;padding-right: 5px;}
     font-size: 16px;
     margin-bottom: 4px;
 }
-.menu,.item{padding: 2px;}
+.menu,.item{padding: 3px;}
 .menu a{display:flex;border-radius:4px;background-color: #fff;padding-left: 15px;width: 100%;letter-spacing:2px;border-bottom:1px solid #fff;}
 .menu .current{background:#e6ffe6;border-bottom: 1px solid #ccc;}
 /*content items*/
