@@ -1,3 +1,11 @@
+// tongji
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1a49e58055a62016311777d33eeddf60";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 // loading img
 window.onload = () => {
     var eles = document.querySelectorAll('.icon'); // 获取所有列表元素
