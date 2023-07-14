@@ -5,23 +5,23 @@ ul,li{list-style: none;}
 @media (max-width: 576px) {
     .container {max-width: 576px;}
     .menu{width:25%;}
-    .item{width:100%;}
+    .card{width:100%;}
 }
 @media (min-width: 577px) and (max-width:760px) {
     .container {max-width:760px;}
     .menu{width:25%;}
-    .item{width:50%;}
+    .card{width:50%;}
 }
 @media (min-width: 761px) and (max-width: 1200px) {
     .container {max-width:1200px;}
     .menu{width:20%;min-width:140px;}
-    .item{width:33.33%;}
+    .card{width:33.33%;}
 }
 
 @media (min-width: 1200px) {
     .container {max-width:1200px;}
     .menu{width:12.5%;min-width:140px;}
-    .item{width:25%;}
+    .card{width:25%;}
 }
 a{text-decoration:none;color: #423c3c;}
 .container{
@@ -59,7 +59,7 @@ header .sort{float:right;padding-right: 5px;}
     font-size: 16px;
     margin-bottom: 4px;
 }
-.menu,.item{padding: 3px;}
+.menu,.card{padding: 3px;}
 .menu a{display:flex;border-radius:4px;background-color: #fff;padding-left: 15px;width: 100%;letter-spacing:2px;border-bottom:1px solid #fff;}
 .menu .current{background:#e6ffe6;border-bottom: 1px solid #ccc;}
 /*content items*/
