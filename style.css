@@ -62,6 +62,13 @@ header .sort{float:right;padding-right: 5px;}
 .menu,.card{padding: 3px;}
 .menu a{display:flex;border-radius:4px;background-color: #fff;padding-left: 15px;width: 100%;letter-spacing:2px;border-bottom:1px solid #fff;}
 .menu .current{background:#e6ffe6;border-bottom: 1px solid #ccc;}
+/*current path*/
+.path{
+  display:flow;
+  margin: 10px 3px;padding: 0 10px;
+  height:35px;line-height: 35px;
+  border-radius: 4px;border: 1px solid #eaebec; border-radius:10px
+}
 /*content items*/
 .link{
     border-radius:4px;
@@ -81,8 +88,16 @@ header .sort{float:right;padding-right: 5px;}
 .txt {margin-left: 0.5rem !important;}
 .name{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;overflow: hidden;}
 .desc{font-size: 12px;color: #a5a3a3;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;overflow: hidden;}
-.arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}
-
+/*.arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}*/
+.extend{
+  display:flow;
+  margin-top: 20px;
+  min-height:40px;
+  border-radius: 4px;text-align: center;
+}
+.extend a{min-width: 80px;height: 30px;display: inline-block;border: 1px solid #cde; line-height: 30px;margin:5px 10px;padding: 0 15px;background: #fff;border-radius:15px}
+.extend a:hover{background: #e6ffe6}
+/*Footer*/
 footer{margin-top:20px;line-height:80px;color:#666;background:#fff}
 footer p{padding:0 5px}
 footer a{color: #666}.footer a:hover{color: #009;text-decoration: underline;}
