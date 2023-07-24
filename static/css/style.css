@@ -22,6 +22,7 @@ ul,li{list-style: none;}
     .container {max-width:1180px;}
     .menu{width:12.5%;min-width:140px;}
     .card{width:25%;}
+    .container .logo{background-position: 5px 22px;padding-left: 45px}
 }
 a{text-decoration:none;color: #423c3c;}
 .container{
@@ -50,7 +51,7 @@ header{
     box-shadow: 0px 1px 3px #eee;
     border-bottom: 1px solid #eee;
 }
-header .logo{float:left;font-size:1.8em;font-weight: bold;padding-left:45px;letter-spacing:1px;background: url(../image/logo.png) no-repeat 0 22px;background-size: 30px}
+header .logo{float:left;font-size:1.8em;font-weight: bold;padding-left:55px;letter-spacing:1px;background: url(../image/logo.png) no-repeat 15px 22px;background-size: 30px}
 header .sort{float:right;padding-right: 5px;font-size:1.5em;}
 header .sort a{margin: 0 10px}
 /*nav menu*/
