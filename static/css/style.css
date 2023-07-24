@@ -22,7 +22,6 @@ ul,li{list-style: none;}
     .container {max-width:1180px;}
     .menu{width:12.5%;min-width:140px;}
     .card{width:25%;}
-    .container .logo{background-position: 5px 22px;padding-left: 45px}
 }
 a{text-decoration:none;color: #423c3c;}
 .container{
