@@ -19,13 +19,13 @@ ul,li{list-style: none;}
 }
 
 @media (min-width: 1200px) {
-    .container {max-width:1200px;}
+    .container {max-width:1180px;}
     .menu{width:12.5%;min-width:140px;}
     .card{width:25%;}
 }
 a{text-decoration:none;color: #423c3c;}
 .container{
-  width: 100%;min-height:80px;
+  width: 100%;min-height:75px;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
@@ -42,7 +42,7 @@ a{text-decoration:none;color: #423c3c;}
 header{
     position: fixed;
     top: 0;left: 0;
-    width: 100%;line-height: 80px;
+    width: 100%;line-height: 75px;
     background-color:rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: space-between;
@@ -50,8 +50,9 @@ header{
     box-shadow: 0px 1px 3px #eee;
     border-bottom: 1px solid #eee;
 }
-header .logo{float:left;font-size:1.8em;font-weight: bold;padding-left:5px;letter-spacing:1px}
-header .sort{float:right;padding-right: 5px;}
+header .logo{float:left;font-size:1.8em;font-weight: bold;padding-left:45px;letter-spacing:1px;background: url(../image/logo.png) no-repeat 0 22px;background-size: 30px}
+header .sort{float:right;padding-right: 5px;font-size:1.5em;}
+header .sort a{margin: 0 10px}
 /*nav menu*/
 .menu-card{
     margin-top:88px;
@@ -98,6 +99,6 @@ header .sort{float:right;padding-right: 5px;}
 .extend a{min-width: 80px;height: 30px;display: inline-block;border: 1px solid #cde; line-height: 30px;margin:5px 10px;padding: 0 15px;background: #fff;border-radius:15px}
 .extend a:hover{background: #e6ffe6}
 /*Footer*/
-footer{margin-top:20px;line-height:80px;color:#666;background:#fff}
+footer{margin-top:20px;line-height:75px;color:#666;background:#fff}
 footer p{padding:0 5px}
 footer a{color: #666}.footer a:hover{color: #009;text-decoration: underline;}
