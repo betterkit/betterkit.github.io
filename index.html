@@ -1,438 +1,98 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-<base target="_blank">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name='viewport'content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-<title>AI资讯 - 人工智能应用精选</title>
-<meta name="keywords" content="人工智能,AI,Artificial Intelligence" />
-<meta name="description" content="人工智能网址导航网站大全，汇集国内外的AI资讯，全球大语言模型，生成式内容创作AIGC" />
-<link rel="shortcut icon" href="static/image/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="static/css/style.css" type="text/css">
-<script type="text/javascript" src="static/js/load.js"></script>
+    <base target="_blank">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的主页</title>
+    <meta name="keywords" content="自定义网址,网址导航,我的主页,办公商务">
+    <meta name="description" content="我的自定义网址导航，公司企业标志，背景颜色，背景图片，背景图显示模式，无限自定义网址，自定义链接颜色，商务办公主页！">
+    <link rel="shortcut icon" href="static/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="static/cdn/calendar.js"></script>
+    <script src="static/js/main.js" defer></script>
+    <script src="https://hm.baidu.com/hm.js?4f52264b794fab5730b2c6c06e1809b9"></script>
 </head>
 <body>
 <header>
-    <div class="container">
-        <div class="logo"><a href="./index.html" target="_self">Bettersoft</a></div>
-        <div class="sort">1000+ AI Tools</div>
+    <div class="container cf">
+        <div class="fl">
+            <span class="weather">天气预报</span>
+            <div id="setcity">
+                <select id="prov_"><option value="">选择省份</option></select><br>
+                <select id="city_"><option value="">选择城市</option></select><br>
+                <select id="county_"><option value="">选择区县</option></select><br>
+                <button type="button" id="set_ok">确定</button>
+                <button type="button" id="set_cannel">关闭</button>
+            </div>
+            <a href="javascript:;" class="calendar" title="万年历日历">万年历日历</a>
+        </div>
+        <ul class="fr">
+            <li><a href="http://hao.66360.cn/">网址大全</a></li>
+            <li><a href="javascript:;">快捷导航</a></li>
+        </ul>
     </div>
 </header>
-<div class="container">
-    <ul class="row menu-card">
-        <li class="menu"><a href="chat.html" target="_self" title="AI对话">对话</a></li>
-        <li class="menu"><a href="draw.html" target="_self" title="AI绘画">绘画</a></li>
-        <li class="menu"><a href="write.html" target="_self" title="AI写作">写作</a></li>
-        <li class="menu"><a href="design.html" target="_self" title="AI设计">设计</a></li>
-        <li class="menu"><a href="work.html" target="_self" title="AI办公">办公</a></li>
-        <li class="menu"><a href="image.html" target="_self" title="AI图像">图像</a></li>
-        <li class="menu"><a href="video.html" target="_self" title="AI视频">视频</a></li>
-        <li class="menu"><a href="audio.html" target="_self" title="AI音频">音频</a></li>
-        <li class="menu"><a href="code.html" target="_self" title="AI编程">编程</a></li>
-        <li class="menu"><a href="3d.html" target="_self" title="3d">3 D</a></li>
-        <li class="menu"><a href="prompt.html" target="_self" title="AI指令">指令</a></li>
-        <li class="menu"><a href="build.html" target="_self" title="AI开发">开发</a></li>
-        <li class="menu"><a href="business.html" target="_self" title="商务">商务</a></li>
-        <li class="menu"><a href="assistant.html" target="_self" title="AI助手">助手</a></li>
-        <li class="menu"><a href="live.html" target="_self" title="生活">生活</a></li>
-        <li class="menu"><a href="plus.html" target="_self" title="AI新知">其他</a></li>
-    </ul>
-    <div class="row">
-        <div class="card">
-            <a href="https://www.microsoft.com/en-us/ai/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.microsoft.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">Microsoft AI</div>
-                    <div class="desc">Microsoft AI</div>
+    <div class="main">
+        <div class="container">
+            <div class="hello">
+                <div class="logo"><h1>自定义网址导航</h1></div>
+            </div>
+            <div class="search">
+                <div class="search-box">
+                    <img class="search-icon" src="static/image/baidu.png">
+                    <input type="text" id="txt" class="search-input" autofocus>
+                    <span class="search-clear"></span>
+                    <button class="search-btn" id="search-btn"></button>
                 </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://ai.google/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="static/icon/google-ai.ico">
-                <div class="txt">
-                    <div class="name">Google AI</div>
-                    <div class="desc">Google AI 学习平台</div>
+                <div class="search-hot" id="box"><ul></ul></div>
+                <div class="search-engine">
+                    <div class="search-head">
+                        <span class="search-tit">选择搜索引擎：</span>
+                        <div class="search-tool">搜索热词：<span id="hot-btn" class="off"></span></div>
+                    </div>
+                    <ul class="search-list"></ul>
                 </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://openai.com/blog" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://openai.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">OpenAI</div>
-                    <div class="desc">OpenAI blog</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://blogs.nvidia.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://blogs.nvidia.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">NVIDIA Blog</div>
-                    <div class="desc">NVIDIA Blog</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://blog.deepmotion.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://blog.deepmotion.com/content/images/size/w256h256/2020/03/DM_Profile_Picture_1000x1000.png">
-                <div class="txt">
-                    <div class="name">DeepMotion</div>
-                    <div class="desc">DeepMotion官方博客</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://chatglm.cn/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://chatglm.cn/favicon.ico">
-                <div class="txt">
-                    <div class="name">ChatGLM</div>
-                    <div class="desc">千亿对话模型</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://www.deepmind.com/blog" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://assets-global.website-files.com/621d30e84caf0be3291dbf1c/62416ff9684a305ca8354c8e_favicon.png">
-                <div class="txt">
-                    <div class="name">DeepMind Blog</div>
-                    <div class="desc">来自人工智能世界的所有最新见解</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://shanhai.unisound.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://shanhai.unisound.com/favicon.png">
-                <div class="txt">
-                    <div class="name">云知声</div>
-                    <div class="desc">山海大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://tiangong.kunlun.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://tiangong.kunlun.com/logo.ico">
-                <div class="txt">
-                    <div class="name">天工</div>
-                    <div class="desc">国产双千亿级大语言模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://chat.sensetime.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://chat.sensetime.com/wb/favicon.ico">
-                <div class="txt">
-                    <div class="name">商量</div>
-                    <div class="desc">商汤科技 AGI 通用人工智能</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://qianwen.aliyun.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://img.alicdn.com/imgextra/i4/O1CN01c26iB51UyR3MKMFvk_!!6000000002586-2-tps-124-122.png">
-                <div class="txt">
-                    <div class="name">通义千问</div>
-                    <div class="desc">阿里旗下大语言模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://xinghuo.xfyun.cn/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://xinghuo.xfyun.cn/spark-icon.ico">
-                <div class="txt">
-                    <div class="name">讯飞星火</div>
-                    <div class="desc">讯飞星火认知大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://yiyan.baidu.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://nlp-eb.cdn.bcebos.com/logo/favicon.ico">
-                <div class="txt">
-                    <div class="name">文心一言</div>
-                    <div class="desc">百度知识增强大语言模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://moss.fastnlp.top/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://survey.moss.fastnlp.top/favicon.ico">
-                <div class="txt">
-                    <div class="name">MOSS</div>
-                    <div class="desc">复旦大学GPT MOSS</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://openapi.mobvoi.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://openapi.mobvoi.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">序列猴子</div>
-                    <div class="desc">一站式API，包括文本生成、语音、图片、视频等</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="http://www.datagrand.com/products/aigc/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="http://www.datagrand.com/images/favicon.ico">
-                <div class="txt">
-                    <div class="name">曹植</div>
-                    <div class="desc">达观数据-曹植GPT大语言模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://bbt.ssymmetry.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://bbt.ssymmetry.com/logo1.png">
-                <div class="txt">
-                    <div class="name">乾元</div>
-                    <div class="desc">超对称[乾元]大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://ai.360.cn/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://p1.ssl.qhimg.com/t0180f58567ac1a6ba5.png">
-                <div class="txt">
-                    <div class="name">360智脑</div>
-                    <div class="desc">探索全新的人机协作模式</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://www.openbmb.org/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.openbmb.org/favicon.ico">
-                <div class="txt">
-                    <div class="name">OpenBMB</div>
-                    <div class="desc">清华大学和智源研究院共同支持发起</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://www.langboat.com/technology/mengzi" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.langboat.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">孟子</div>
-                    <div class="desc">孟子预训练模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://xihe.mindspore.cn/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://xihe.mindspore.cn/favicon.ico">
-                <div class="txt">
-                    <div class="name">昇思</div>
-                    <div class="desc">昇思大模型平台</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://api.minimax.chat/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://api.minimax.chat/favicon.ico">
-                <div class="txt">
-                    <div class="name">MiniMax</div>
-                    <div class="desc">新一代的中文大语言模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://segment-anything.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://segment-anything.com/assets/M_Favicon.ico">
-                <div class="txt">
-                    <div class="name">Segment Anything</div>
-                    <div class="desc">Meta图形分割模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://imagebind.metademolab.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://imagebind.metademolab.com/M_Favicon_1632.ico">
-                <div class="txt">
-                    <div class="name">ImageBind</div>
-                    <div class="desc">Meta开源多模态AI大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://github.com/tatsu-lab/stanford_alpaca" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.stanford.edu/favicon.ico">
-                <div class="txt">
-                    <div class="name">Stanford Alpaca</div>
-                    <div class="desc">斯坦福羊驼模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://tigerbot.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://tigerbot.com/logo_core.png">
-                <div class="txt">
-                    <div class="name">TigerBot</div>
-                    <div class="desc">多语言多任务的大规模语言模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://fengshenbang-lm.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://fengshenbang-lm.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">封神榜</div>
-                    <div class="desc">封神榜大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://chatlaw.cloud/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://chatlaw.cloud/favicon.ico">
-                <div class="txt">
-                    <div class="name">ChatLaw</div>
-                    <div class="desc">ChatLaw 法律大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://xinchenai.com/model" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://xinchenai.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">西湖</div>
-                    <div class="desc">西湖心辰是专注于人工智能服务研发</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://ai.meitu.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://ai.meitu.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">美图AI开放平台</div>
-                    <div class="desc">美图公司推出的AI服务平台</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://www.mathgpt.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.mathgpt.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">MathGPT</div>
-                    <div class="desc">好未来MathGPT</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://www.educhat.top/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.educhat.top/favorite.png">
-                <div class="txt">
-                    <div class="name">EduChat</div>
-                    <div class="desc">华东师范大学 教育领域对话大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://www.miraclevision.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.miraclevision.com/static/images/favicon.png">
-                <div class="txt">
-                    <div class="name">奇想智能</div>
-                    <div class="desc">美图自研的一款懂美学的AI视觉大模型</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://chat.jinaai.cn/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://chat.jinaai.cn/favicon.ico">
-                <div class="txt">
-                    <div class="name">JinaChat</div>
-                    <div class="desc">More modality, longer memory, less cost</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="http://hidream.ai/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="http://hidream.ai/assets/111.ad5668d1.ico">
-                <div class="txt">
-                    <div class="name">HiDream</div>
-                    <div class="desc">HiDream</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://drivegpt.haomoai.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://drivegpt.haomoai.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">DriveGPT</div>
-                    <div class="desc">DriveGPT</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://hyper.ai/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://cdn.hyper.ai/wp-content/uploads/2018/11/cropped-logo-icon-border-1-32x32.png">
-                <div class="txt">
-                    <div class="name">超神经</div>
-                    <div class="desc">专注介绍人工智能与其适用场景</div>
-                </div>
-          </a>
-        </div>
-        <div class="card">
-            <a href="https://gpt.candobear.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://gpt.candobear.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">GPT学习宝典</div>
-                    <div class="desc">GPT学习宝典</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://175ai.cn/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://175ai.cn/ai.png">
-                <div class="txt">
-                    <div class="name">一起玩Ai</div>
-                    <div class="desc">AI作品分享平台和AI绘画提示词助手</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://www.xtimesai.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.xtimesai.com/favicon.ico">
-                <div class="txt">
-                    <div class="name">XTimesAI</div>
-                    <div class="desc">AI模型交流学习平台</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://allenai.org/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://allenai.org/_next/static/images/favicon-df396e26dbc963327378053a63d23ec6.ico">
-                <div class="txt">
-                    <div class="name">Allen</div>
-                    <div class="desc">艾伦人工智能研究所（AI2）</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://www.aiofchina.com/" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://www.aiofchina.com/wp-content/uploads/2023/02/xiao-150x150.png">
-                <div class="txt">
-                    <div class="name">AI中国</div>
-                    <div class="desc">关于AI，你想知道的一切信息</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://nf.video/Nx2op" class="link">
-                <img class="icon" src="static/image/lazyload.gif" data-src="https://nf.video/favicon.ico">
-                <div class="txt">
-                    <div class="name">账号合租</div>
-                    <div class="desc">奈飞合租，软件合租</div>
-                </div>
-            </a>
+            </div>
+            <div class="infoBox">
+                <div class="info">Better soft, Better Life !</div>
+            </div>
+            <ul class="tab"></ul>
         </div>
     </div>
-</div>
-<footer>
-    <div class="container">
-        <p style="float:left">© 2023 Bettersoft | <a href="mailto:bettersoft@qq.com">Contact</a></p>
-        <p style="float:right"><a href="hub.html">HUB</a></p>
-    </div>
-</footer>
+    <aside class="setBox">
+        <div class="topBar cf">
+            <span class="title fl">个性设置</span>
+            <span class="setOFF fr">关闭</span>
+        </div>
+        <div class="inner">
+            <label for="showInfo">显示提示信息</label><input type="checkbox" id="showInfo">
+            <label for="showLink">显示我的网址</label><input type="checkbox" id="showLink"><br>
+            <label for="fontSize">字体大小</label> <input type="number" id="fontSize" value="16" max="26" min="12"><br>
+            <label for="colorPicker">背景颜色</label> <input type="color" id="colorPicker" value="#fbfbfb" title="点击选取颜色"><br>
+            <label for="setLogo">标志图片</label> <input type="url" id="setLogo" placeholder="logo图片网址，支持本地图片"><input type="checkbox" id="showlogo" checked><br>
+            <label for="setImage">背景图片</label> <input type="url" id="setImage" placeholder="背景图网址，支持本地图片"><input type="checkbox" id="showbg" checked><br>
+            背景图显示模式：<br>
+            <input type="radio" name="bgStyle" id="cover" value="cover"><label for="cover">全覆盖</label>
+            <input type="radio" name="bgStyle" id="repeatX" value="repeat-X"><label for="repeatX">横重复</label>
+            <input type="radio" name="bgStyle" id="repeatY" value="repeat-Y"><label for="repeatY">纵重复</label>
+            <input type="radio" name="bgStyle" id="repeat" value="repeat"><label for="repeat">全重复</label><br>
+            <label for="SEbgcolor" title="最大和最小值无效">搜索背景</label> <input type="color" id="SEbgcolor" title="#000000~#ffffff之间" value="#ffffff">
+            <label for="SEtxtcolor" title="最大和最小值无效">搜索文字色</label> <input type="color" id="SEtxtcolor" title="#000000~#ffffff之间"><br>
+            <label for="SEtransparent">搜索透明</label> <input type="range" id="SEtransparent" min="0" max="1" step="0.01">
+        </div>
+    </aside>
+    <footer>
+        <div class="flex">
+            <div class="bottomL">
+                <a title="个性设置" class="setON"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 16 16"><g fill="currentColor"><path d="M8 4.754a3.246 3.246 0 1 0 0 6.492a3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0a2.246 2.246 0 0 1-4.492 0z"/><path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/></g></svg></a>
+            </div>
+            <div class="bottomC">豫ICP备16040847号 | <a href="https://support.qq.com/products/44548">意见反馈</a></div>
+            <div class="bottomR">
+                <a href="setlink.html" title="自定义网址"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 16 16"><path fill="currentColor" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855c-.143.268-.276.56-.395.872c.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332c.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933a8.853 8.853 0 0 1-.481-1.079a8.38 8.38 0 0 0-1.198.49a7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521a8.376 8.376 0 0 0-1.197-.49a8.853 8.853 0 0 1-.481 1.078a6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855c.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667c.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49a7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/></svg></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

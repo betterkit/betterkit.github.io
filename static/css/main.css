@@ -1,0 +1,270 @@
+/*public set*/
+body{font-size: 16px;color: #333;background-color: #fbfbfb; line-height: 1.6em}
+body,h1,ul,ol,dl,li,form{margin: 0;padding: 0;}
+ul,ol,li,dl,dt,dd{list-style: none;}
+button,input,img{border: none;outline:none;}
+a{color: inherit;text-decoration: none;}
+a:hover{color: #1a0dab;}
+.container{width: 96%;max-width: 1200px;margin:0 auto;}
+.fl{float: left;}.fr{float: right;}.cf::after{content: "";display: block;clear: both;}
+/*header*/
+header{
+    height: 40px;
+    line-height: 40px;
+    background: rgba(240, 240, 240, .1);
+    border-bottom:1px solid rgba(128, 128, 128, 0.3);
+    overflow: hidden;
+    font-size: 1rem;
+}
+header .weather img{vertical-align: middle;}
+/*显示设置本地*/
+header #mycity{cursor: pointer;}
+header #setcity{
+    position: absolute;
+    top: 45px;
+    width: 120px;
+    height: 180px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    text-align: center;
+    display: none;
+}
+header #setcity button{cursor: pointer;}
+/*顶部右侧链接*/
+header ul{font-size: 0;}
+header ul li{font-size: 1rem;float: left;}
+header ul li::after{
+    content: '';
+    width: 10px;height: 13px;
+    margin-right: 10px;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+header ul li:last-child::after{width: 0;margin: 0;border: 0}
+/*main content*/
+.main{}
+.hello{
+    height: 150px;
+    margin-top: 50px;
+    text-align: center;
+    overflow: hidden;
+    line-height: 150px;
+}
+.logo{
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.hello img{max-height: 120px;vertical-align: middle;}
+.search{
+    height: 50px;
+    width: 100%;max-width: 800px;
+    margin: 10px auto;
+    position: relative;
+}
+.search-box {
+    height:50px;
+    display:flex;
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    overflow: hidden;
+}
+.search-box:hover{
+    box-shadow: 1px 1px 6px #ccc;
+}
+.search-icon {
+    position:absolute;
+    left:5px;
+    top:4px;
+    width:45px;
+    height:45px;
+    cursor:pointer;
+    border-radius: 23px;
+}
+.search-input {
+    flex:1;
+    height:46px;
+    width:70%;
+    padding-top:2px;
+    padding-left:50px;
+    background-color: transparent;
+    font-size:1.2rem;
+}
+.search-clear::before {content:'X'}
+.search-clear {
+    position:absolute;
+    right:60px;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    top:15px;
+    cursor:pointer;
+    display:none;
+}
+.search-btn {
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    background: url(../image/searchicon.png) no-repeat 10px 13px/25px 25px;
+}
+.search-btn:hover {background-size: 27px 27px;background-position: 9px 12px}
+/*热词*/
+.search-hot {
+    position:absolute;
+    left: 0;right: 0;
+    margin:3px auto;
+    z-index:100;
+    width:100%;
+    max-height: 360px;
+    font-size: 1rem;
+    overflow: hidden;
+}
+.search-hot ul li {line-height:35px;padding:0 5px;border-radius:5px;cursor:pointer}
+.search-hot ul li:first-child {border-radius:5px;}
+.search-hot ul li:last-child {}
+.search-hot ul li:hover {background-color:#f0f0f0}
+.search-hot ul {border-radius:5px;background:#fff;box-shadow: 1px 1px 5px #ccc;margin: 0 48px}
+
+/*select default engine*/
+.search-engine:before {
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    top:-15px;
+    border-top:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid #fff;
+    border-left:8px solid transparent;
+}
+.search-engine {
+    box-sizing:border-box;
+    position:absolute;
+    background:#FFFFFF;
+    top:58px;
+    left:0;
+    width:100%;
+    padding:15px 0 0 15px;
+    border-radius:5px;
+    box-shadow:0 5px 20px 0 #d8d7d7;
+    transition:all .3s;
+    display: none;
+    z-index:999;
+    font-size: 1rem;
+}
+.search-head {overflow:hidden;margin-bottom:10px;line-height:16px;padding-right:15px}
+.search-tit {float:left;margin:0;}
+#colorPicker {
+    vertical-align: middle;border: none;
+    padding: 0;margin-top: -2px;
+}
+.search-tool {float:right;}
+.search-tool>span.off {background-position:-30px 0}
+.search-tool>span {float:right;display:inline-block;width:25px;height:15px;background:url(../image/off_on.png) no-repeat 0 0;cursor:pointer}
+.search-list li {
+    float:left;
+    width:20%;
+    min-width:110px;
+    max-width:135px;
+    line-height:50px;
+    padding:5px 1px;
+    margin:0 20px 15px 0;
+    background:#f9f9f9;
+    cursor:pointer;
+    border-radius:5px;
+}
+.search-list li img {
+    width:45px;
+    height:45px;
+    border-radius:15px;
+    float:left;
+    margin-right:5px;
+    margin-top:2px;
+}
+.infoBox{
+    min-height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #666;
+}
+/*tab*/
+.tab{
+    line-height: 2.3em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.tab ul{
+    margin: 5 auto;
+    border: 1px solid #ccc;
+}
+.tab li{
+}
+.tab a{
+    margin: 0 20px;
+}
+.tab a:first-child{margin-left: 0;}
+.tab a:last-child{margin-right: 0;}
+/*Setting*/
+.setBox{
+    font-size: 1rem;
+    width: 355px;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    line-height: 2.1rem;
+    background: rgba(250, 250, 250, .6);
+    border: 1px solid #abc;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #ccc;
+    display: none;
+}
+.setBox .topBar{
+    height: 35px;
+    overflow: hidden;
+    background: rgba(240, 240, 240, 0.7);
+    box-shadow: 0 2px 4px rgba(240, 240, 240, 0.2);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+.setBox .topBar .title{float: left;padding: 0 10px}
+.setBox .topBar .setOFF{float: right;cursor: pointer;padding: 0 10px}
+.setBox .inner{
+    padding: 10px;
+}
+.setBox label{cursor: pointer;}
+.setBox #setImage,.setBox #setLogo{
+    width: 200px;height: 1.5rem;
+    border-radius: 4px;
+    padding: 0 5px;
+    border-bottom: 1px solid #ccc;
+}
+#colorPicker,#SEbgcolor,#SEtxtcolor{width: 63px;cursor: pointer;vertical-align: middle;}
+.setBox #fontSize{width: 50px;height: 20px;padding: 0 5px;border: 1px solid #abc;}
+#SEtransparent{vertical-align: middle;cursor: pointer;width: 220px}
+/*Footer*/
+footer{
+    position: fixed;
+    font-size: 14px;
+    bottom: .5rem;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    color: #999;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.bottomL{flex: 1;text-align: left;}
+.bottomL .setON{cursor: pointer;}
+.bottomC{flex: 5;text-align: center;}
+.bottomR{flex: 1;text-align: right;}
+
+/*屏幕适应*/
+@media screen and (max-width:720px) {
+    .hello{ margin-top:0;height: 100px;line-height: 100px}
+    .hello img{max-height: 75px;}
+    .setBox{left: 1px}
+}
