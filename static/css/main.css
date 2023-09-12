@@ -4,7 +4,7 @@ body,h1,ul,ol,dl,li,form{margin: 0;padding: 0;}
 ul,ol,li,dl,dt,dd{list-style: none;}
 button,input,img{border: none;outline:none;}
 a{color: inherit;text-decoration: none;}
-a:hover{color: #1a0dab;}
+a:hover{color: #1a0dab !important;}
 .container{width: 96%;max-width: 1200px;margin:0 auto;}
 .fl{float: left;}.fr{float: right;}.cf::after{content: "";display: block;clear: both;}
 /*header*/
@@ -182,14 +182,16 @@ header ul li:last-child::after{width: 0;margin: 0;border: 0}
     margin-top:2px;
 }
 .infoBox{
-    min-height: 150px;
+    height: 150px;
     line-height: 150px;
     text-align: center;
     color: #666;
+    transition: 0.3s all;
 }
+.infohide{height: 60px;}
 /*tab*/
 .tab{
-    line-height: 2.3em;
+    line-height: 2em;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -200,7 +202,7 @@ header ul li:last-child::after{width: 0;margin: 0;border: 0}
 .tab li{
 }
 .tab a{
-    margin: 0 20px;
+    margin: 0 0.6em;letter-spacing: 0.2em;
 }
 .tab a:first-child{margin-left: 0;}
 .tab a:last-child{margin-right: 0;}
@@ -264,7 +266,7 @@ footer{
 
 /*屏幕适应*/
 @media screen and (max-width:720px) {
-    .hello{ margin-top:0;height: 100px;line-height: 100px}
+    .hello{ margin-top:10px;height: 100px;line-height: 100px}
     .hello img{max-height: 75px;}
     .setBox{left: 1px}
 }
