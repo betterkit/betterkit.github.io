@@ -1,6 +1,6 @@
 document.write(`
     <ul class="cl">
-        <li><a href="chat.html" target="_self" title="首页">首页</a></li>
+        <li><a href="index.html" target="_self" title="首页">首页</a></li>
         <li><a href="chat.html" target="_self" title="AI对话">对话</a></li>
         <li><a href="draw.html" target="_self" title="AI绘画">绘画</a></li>
         <li><a href="write.html" target="_self" title="AI写作">写作</a></li>
