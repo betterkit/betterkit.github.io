@@ -28,10 +28,11 @@ header .sort a{margin: 0 10px}
 /*nav menu*/
 nav ul {
     margin-top: 80px;
+    padding: 5px;
     line-height: 25px;
     font-size: 16px;
 }
-nav ul li {background: #eee;float: left; padding: 0 5px; margin: 5px; border-radius: 4px}
+nav ul li {background: #eee;float: left; padding: 0 4px; margin-right: 10px; border-radius: 4px}
 nav ul li.current {font-weight: bold;background: #e6ffe6}
 /*current path*/
 .path{
