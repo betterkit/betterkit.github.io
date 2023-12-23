@@ -1,6 +1,6 @@
 
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
-body{background-color: #f5f5f5;font-size:14px;font-family: 'Microsoft YaHei', sans-serif;}
+body{background-color: #fbfbfb;font-size:14px;font-family: 'Microsoft YaHei', sans-serif;}
 ul,li{list-style: none;}
 .cl::after{content: '';display: block; clear: both;}
 a{text-decoration:none;color: #423c3c;}
@@ -68,19 +68,10 @@ section span{font-size: 12px;color: #a5a3a3;}
 .rec{
     box-shadow: 1px 1px 3px #ccc;
 }
-/*.arrow{margin-left: auto !important;color:#ccc;display: flex;align-items: center !important;}*/
-.extend{
-  display:flow;
-  margin-top: 20px;
-  min-height:40px;
-  border-radius: 4px;text-align: center;
-}
-.extend a{min-width: 80px;height: 30px;display: inline-block;border: 1px solid #cde; line-height: 30px;margin:5px 10px;padding: 0 15px;background: #fff;border-radius:15px}
-.extend a:hover{background: #e6ffe6}
 /*Footer*/
-footer{margin-top: 20px; padding-top: 10px; line-height: 30px; height: 60px; color: #abc; background: #000; text-align: center;}
+footer{margin-top: 20px;box-shadow: -2px 0 5px #ccc; padding-top: 10px; line-height: 30px; height: 60px; color: #666; background: #eec; text-align: center;}
 footer p{padding:0 5px}
-footer a{color: #abc}.footer a:hover{color: #009;text-decoration: underline;}
+footer a{color: #666}
 
 @media (max-width: 576px) {
     .container {max-width: 576px;}
