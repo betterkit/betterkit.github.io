@@ -78,9 +78,9 @@ section span{font-size: 12px;color: #a5a3a3;}
 .extend a{min-width: 80px;height: 30px;display: inline-block;border: 1px solid #cde; line-height: 30px;margin:5px 10px;padding: 0 15px;background: #fff;border-radius:15px}
 .extend a:hover{background: #e6ffe6}
 /*Footer*/
-footer{margin-top:20px;line-height:75px;color:#666;background:#fff}
+footer{margin-top: 20px; padding-top: 10px; line-height: 30px; height: 60px; color: #abc; background: #000; text-align: center;}
 footer p{padding:0 5px}
-footer a{color: #666}.footer a:hover{color: #009;text-decoration: underline;}
+footer a{color: #abc}.footer a:hover{color: #009;text-decoration: underline;}
 
 @media (max-width: 576px) {
     .container {max-width: 576px;}
