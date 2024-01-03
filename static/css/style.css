@@ -33,7 +33,7 @@ nav ul {
     line-height: 25px;
     font-size: 16px;
 }
-nav ul li {background: #eee;float: left; padding: 0 4px; margin: 2px 5px; border-radius: 4px}
+nav ul li {background: #ffe;float: left; padding: 0 4px; margin: 2px 5px; border-radius: 4px}
 nav ul li.current {font-weight: bold;background: #e6ffe6}
 /*current path*/
 .path{
