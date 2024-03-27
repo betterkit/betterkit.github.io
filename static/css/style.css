@@ -43,9 +43,9 @@ nav ul li.current {font-weight: bold;background: #e6ffe6}
   border-radius: 4px;border: 1px solid #eaebec; border-radius:10px
 }
 /*content items*/
-.row::after {content: '';display: block;clear: both;}
-section {float: left; width: 25%;height: 75px;overflow: hidden;}
-section a{
+ul.list::after {content: '';display: block;clear: both;}
+ul.list li {float: left; width: 25%;height: 75px;overflow: hidden;}
+ul.list li a{
     height: 70px;
     border-radius:4px;
     margin: 5px;padding: 5px;
@@ -54,7 +54,7 @@ section a{
     border: 1px solid #ccc;
     background-color:#fff;
 }
-section img{
+ul.list li img{
     width: 40px;
     height: 40px;
     display: block;
@@ -63,8 +63,8 @@ section img{
     margin-right: 8px;
     border-radius: 10px;
 }
-section h3{font-size: 14px;}
-section span{font-size: 12px;color: #a5a3a3;}
+ul.list li h3{font-size: 14px;}
+ul.list li span{font-size: 12px;color: #a5a3a3;}
 .rec{
     box-shadow: 1px 1px 3px #ccc;
 }
@@ -75,18 +75,18 @@ footer a{color: #666}
 
 @media (max-width: 576px) {
     .container {max-width: 576px;}
-    section {width:100%;}
+    ul.list li {width:100%;}
 }
 @media (min-width: 577px) and (max-width:760px) {
     .container {max-width:760px;}
-    section {width:50%;}
+    ul.list li {width:50%;}
 }
 @media (min-width: 761px) and (max-width: 1080px) {
     .container {max-width: 960px;}
-    section {width:33.33%;}
+    ul.list li {width:33.33%;}
 }
 
 @media (min-width: 1200px) {
     .container {max-width: 1080px;}
-    section {width:25%;}
+    ul.list li {width:25%;}
 }
