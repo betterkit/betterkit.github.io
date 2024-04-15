@@ -6,7 +6,7 @@ ul,li{list-style: none;}
 a{text-decoration:none;color: #423c3c;}
 .container{
   width: 100%;
-  max-width: 960px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 .row {}
@@ -44,14 +44,13 @@ nav ul li.current {font-weight: bold;background: #e6ffe6}
 }
 /*content items*/
 ul.list::after {content: '';display: block;clear: both;}
-ul.list li {float: left; width: 25%;height: 75px;overflow: hidden;}
+ul.list li {float: left; width: 23%;margin: 10px 1%}
 ul.list li a{
     height: 70px;
-    border-radius:4px;
-    margin: 5px;padding: 5px;
+    padding: 5px;
     display: block;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border-bottom: 1px dotted #999;
     background-color:#fff;
 }
 ul.list li img{
@@ -84,9 +83,4 @@ footer a{color: #666}
 @media (min-width: 761px) and (max-width: 1080px) {
     .container {max-width: 960px;}
     ul.list li {width:33.33%;}
-}
-
-@media (min-width: 1200px) {
-    .container {max-width: 1080px;}
-    ul.list li {width:25%;}
 }
