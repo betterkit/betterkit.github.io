@@ -1,0 +1,109 @@
+/*common set*/
+html,body{overflow: auto;height:100%}
+body {font-size: 14px; color: #333; line-height: 30px;min-height: 100vh;}
+body, h1, ul, li, p {margin: 0;padding: 0}
+li{list-style: none;}
+a{text-decoration: none;color: #333}a:hover{color: darkblue;text-decoration: underline;}
+a.green{color: #15803D}a.red{color: #f21c1c}
+.fl{float: left;}.fr{float: right;}.cf::after{content: ""; display: block; clear: both;}
+input,button{outline: none;border: none;}
+.topbar,header,.main,#main,footer {width: 1020px;}
+/*topBar*/
+nav {border-bottom:1px dotted #d6d6d6;background: #fafafa88; height: 35px;min-width: 1020px;}
+nav #setIcon{}
+.topbar {letter-spacing: 1px;padding: 2px 8px;box-sizing: border-box;margin: 0 auto;}
+.topbar a{display: block;float: left;}
+.topbar i{display: block;float: left;margin: 8px 5px 0;width: 0;height: 13px;border-left: 1px solid rgba(0, 0, 0, 0.3);border-right: 1px solid rgba(255, 255, 255, 0.5);}
+.topbar img{width: 21px;height: 21px;position: relative;top: 4px;cursor: pointer;padding: 0 3px}
+/*set IO*/
+#setbox {width: 1018px;height: 0px;overflow: hidden;margin: 1px auto;background: #ffe;}
+#setbox.hide{height: 0px;transition: all 0.3s}
+#setbox.show{height: 90px;transition: all 0.3s}
+#setbox label{cursor: pointer;}
+#setbox input{outline: 1px dashed #ccc;padding: 2px;margin: 0 5px}
+#setbox input[type="checkbox"]{cursor: pointer;}
+#setbox p{border: 1px solid #ddd;padding: 5px;}
+#setbox p:last-child{border-top: none;}
+#setbox #BGcolorA,#BGcolorB{width: 40px}
+#setbox #BGcolorC{width: 60px}
+#setbox #setlogo,#BGimg{width: 200px;}
+#setbox #headerTop{width: 60px;}
+/*header*/
+header {height: 99px;overflow: hidden;margin: 60px auto 0;}
+header .logo{height: 95px;margin: 0 auto;color: #1b5b; text-align: center;font-size: 95px;font-weight: bold;line-height: 95px}
+header .logo img{max-height: 85px}
+#search{margin: 10px auto;width: 1020px}
+/*customize*/
+#customize{width: 1018px;height: 38px;line-height: 38px;position: relative;margin: -5px auto;background: #fff2; border: 1px solid #ccc5; border-radius: 8px;}
+#customize #mysite {text-align: center;}
+#customize #mysite a{margin: 0 10px;}
+#customize #mysite a:first-child{margin-left: 38px}
+/*main nav*/
+.main {height: 350px;overflow: hidden;margin: 15px auto;}
+.main #main_box {width: 100%; text-align: center;float: left;line-height: 42px}
+.main .main_tab {margin-bottom: 10px;font-size: 16px;letter-spacing: 2px}
+.main .main_tab li{
+    border: 1px dotted #eaeaea66;
+    margin: 0 5px;
+    background: #dfe0e123;
+    float: left; color: #555;cursor: pointer;
+    width: 135px;height: 38px;line-height: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.main .main_tab li:first-child{margin-left: 8px}
+.main .main_tab .crt{border: 1px solid #ccc5;background: #eaeaea55;font-weight: bold;}
+/*main content*/
+.main .main_list {background: #fff2;display: none;height: 301px;border-radius: 8px;overflow: hidden;}
+.main .main_list .loading {margin-top: 135px}
+.main .main_list ul {padding-left: 3px}
+.main .main_list li {
+    border-bottom: 1px dotted #cccc;
+    float: left;height: 43px; width: 135px;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+.main .main_list.current{display: block;}
+.main .main_list li img{height: 16px;width: 16px;vertical-align: middle;margin: -2px 5px 0 0}
+/*site page*/
+#main {min-height: 350px;margin: 0 auto;}
+#main div {
+    height: 35px;margin-top: 10px;
+    border: 1px solid rgba(310,215, 210, 0.5);border-bottom: none;
+    padding: 3px 10px 0;font-weight: bold;color: #666;
+    background: rgba(240, 240, 240, 0.5);
+    border-top-left-radius: 8px;border-top-right-radius: 8px;
+}
+#main ul{
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(210, 215, 210, 0.5);border-top: none;
+    border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;
+}
+#main ul::after{content: '';display: block;clear: both;}
+#main ul li{float: left;padding: 5px 10px;width: 165px;box-sizing: border-box;text-align: center;}
+/*footer*/
+footer {color: #999;text-align: center;margin: 15px auto 0;}
+footer a{color: #555;margin-right: 20px;}
+footer a:last-child{margin-right: 0;}
+footer #support {position: relative;}
+footer #support img{display: none;position: absolute;top: -220px;left: -70px;height: 200px;width: 200px}
+footer #support:hover img{display: block;}
+footer .copyright, footer .copyright a{color: #0006;line-height: 20px;font-size: 13px;margin-top: 5px}
+/*声明字体*/
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('webfont.eot'); /* IE9 */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('webfont.woff2') format('woff2'),
+    url('webfont.woff') format('woff'), /* chrome、firefox */
+    url('webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+.web-font {
+    font-family: "webfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

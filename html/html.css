@@ -1,0 +1,15 @@
+body {font-size: 14px; line-height: 1.6em; margin: 0;padding: 0}
+ul,li{list-style: none;margin: 0;padding: 0}
+a{text-decoration: none;color: #333}
+em{font-style: normal;}
+.clearfix,ul.container::after{content: '';display: block; clear: both;}
+header{height: 80px;}
+.container{margin: 0 auto;max-width: 1020px;}
+.container li{float: left;width: 23%;height: 50px;margin: 10px 1%;border-bottom: 1px dotted #999;}
+.container li img{width: 45px;height: 45px;float: left;}
+.container li div{margin-left: 55px}
+.container li div p{margin: 0;font-size: 13px;color: #666}
+
+footer {text-align: center;margin-top: 30px;background: #ffe;height: 55px;line-height: 55px}
+@media only screen and (max-width:1000px) {ul.container li{width: 48%}}
+@media only screen and (max-width:500px) {ul.container li{width: 100%}}

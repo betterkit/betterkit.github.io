@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<base target="_blank">
+<title>滚动消息</title>
+<meta http-equiv="Cache-Control" content="no-store">
+<style type="text/css">
+body{margin:0;padding:0;color:#333;font-size:14px;text-align: center;}
+ul,li,p{margin:0;padding:0;border:0;list-style:none;}
+._container{height:23px;overflow:hidden;margin-bottom: -2px}
+._container li{height:23px;line-height:23px}
+._container li:first-child{margin-top:0px;transition:margin-top 1s}
+a{text-decoration:none; color:#333; margin-right:3px; cursor:pointer;}a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+	<ul class="_container" id="demo">
+		<li>
+			<a href="http://www.12379.cn/">突发预警</a>
+			<a href="https://livechina.cctv.com/">直播中国</a>
+			<a href="https://weixin.hngscloud.com/">河南高速</a>
+		</li>
+		<li>
+			<a href="https://nf.video/Nx2op">账号合租</a>
+			<a href="https://s.click.taobao.com/ewVjKrt">淘宝特价</a>
+			<a href="https://hotels.ctrip.com/?AllianceID=4090906&sid=32002090&ouid=kfptpcljzh">机票酒店</a>
+		</li>
+	</ul>
+	<a href="http://www.carnoc.com/">民航资讯</a>
+	<a href="https://www.piyao.org.cn/">网络辟谣</a>
+	<a href="http://www.cneb.gov.cn/">应急广播</a>
+<script>
+	function goto(){
+		if(window.location.href.indexOf("tmp")==-1){
+		window.location.href=window.location.href+'?tmp='+Math.random().toString()
+		}
+	}
+	function Scroll(){}
+	Scroll.prototype.upScroll=function(dom,_h,interval){
+		var dom=document.getElementById(dom);
+		var timer=setTimeout(function(){var _field=dom.firstElementChild;_field.style.marginTop=_h;clearTimeout(timer);},1000)
+		setInterval(function(){
+		var _field=dom.firstElementChild;
+		_field.style.marginTop="0px";
+		dom.appendChild(_field);
+		var _field=dom.firstElementChild;
+			_field.style.marginTop=_h;},interval)
+	}
+	var myScroll=new Scroll();
+	myScroll.upScroll("demo","-23px",5000);
+</script>
+</body>
+</html>

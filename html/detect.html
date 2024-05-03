@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>本地环境-客户端代理浏览器检测</title>
+    <meta name="keywords" content="本地环境,用户代理,浏览器代号,分辨率,环境检测">
+    <meta name="description" content="本地环境，客户端用户代理检测，浏览器代号名称版本，物理逻辑分辨率，是否支持Cookie及本地存储localStorage">
+    <script src="https://hm.baidu.com/hm.js?991085ab8ca463554afecc6a6eb465af"></script>
+    <link rel="stylesheet" type="text/css" href="html.css">
+</head>
+<body>
+    <div class="topbar"></div>
+    <header class="container"><h1>客户端代理浏览器环境检测</h1></header>
+    <div class="container">
+        <em>是否支持Cookie：</em><span id="isCookie"></span><br>
+        <em>是否支持本地存储：</em><span id="isStore"></span><br>
+        <em>显示器分辨率：</em><span id="screen"></span><br>
+        <em>当前窗口大小：</em><span id="explore"></span><br>
+        <script>
+            let iscookie=document.querySelector('#isCookie');
+            let isStore=document.querySelector('#isStore');
+            let screen=document.querySelector('#screen');
+            let explore=document.querySelector('#explore');
+            iscookie.innerHTML= navigator.cookieEnabled;
+             if (typeof localStorage !== 'undefined') {
+                try {
+                    localStorage.setItem('feature_test', 'yes');
+                    if (localStorage.getItem('feature_test') === 'yes') {
+                        localStorage.removeItem('feature_test');
+                        isStore.innerText = "是";
+                        // localStorage is enabled
+                    } else {
+                        isStore.innerText = "否";
+                        // localStorage is disabled
+                    }
+                } catch(e) {
+                    isStore.innerText = "否";
+                    // localStorage is disabled
+                }
+            } else {
+                isStore.innerText = "无效";
+                // localStorage is not available
+            }
+            screen.innerHTML=window.screen.width +"*"+window.screen.height +"<br>物理分辨率为："+window.screen.width*window.devicePixelRatio +"*"+window.screen.height*window.devicePixelRatio;
+            explore.innerHTML = window.innerWidth +"*"+window.innerHeight+" / "+ window.outerWidth +"*"+window.outerHeight;
+            window.onresize=()=>{explore.innerHTML = window.innerWidth +"*"+window.innerHeight+" / "+ window.outerWidth +"*"+window.outerHeight;}
+
+            /* Navigator对象常见属性 */
+            document.write("浏览器代号：" + navigator.appCodeName); //即浏览器的应用程序代码名称
+            document.write("<br>浏览器名称：" + navigator.appName); //即浏览器的应用程序名称。
+            document.write("<br>浏览器版本：" + navigator.appVersion);
+            document.write("<br>硬件平台：" + navigator.platform); //即浏览器平台(操作系统)
+            document.write("<br>用户代理：" + navigator.userAgent); //即由客户机发送服务器的 user-agent 头部的值。
+            document.write("<br>用户代理语言：" + navigator.language); //即浏览器语言
+            document.write("<br>浏览器引擎的产品名称：" + navigator.product);
+        </script>
+    </div>
+    <footer class="container">
+        
+    </footer>
+</body>
+</html>

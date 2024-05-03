@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>设置自定义网址</title>
+<meta name="keywords" content="设置自定义网址,常用网址,网址收藏">
+<meta name="description" content="我的常用网址，设置自定义网址，网址收藏">
+<link rel="shortcut icon" href="static/image/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="static/css/page.css">
+<script src="https://hm.baidu.com/hm.js?991085ab8ca463554afecc6a6eb465af"></script>
+<script src="static/js/setlink.com.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="container cf">
+        <div class="fl">当前位置：<a href="/">首页</a> -> 自定义网址</div>
+        <div class="fr"><a href="homepage.html">如何设置主页</a></div>
+    </div>
+</header>
+<div class="container">
+    <div class="main">
+        <table class="weblist">
+            <h1>自定义网址</h1>
+            <thead>
+                <tr>
+                    <th width="10%">序号</th>
+                    <th width="10%">分类</th>
+                    <th width="15%">站名</th>
+                    <th width="20%">网址</th>
+                    <th width="20%">备注</th>
+                    <th width="10%">颜色</th>
+                    <th width="15%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hang">
+                    <td><input type="number" name="index" class="index" value="-1" style="text-align: center;"></td>
+                    <td><input type="text" name="group" class="group" minlength="2" maxlength="20" value="group"></td>
+                    <td><input type="text" name="site" class="site" minlength="2" maxlength="50"></td>
+                    <td><input type="url" name="url" class="url" minlength="9" maxlength="250"></td>
+                    <td><input type="text" name="desc" class="desc" minlength="2" maxlength="250"></td>
+                    <td><input type="text" name="color" class="color" minlength="7" maxlength="7" placeholder="#000000" title="链接显示的颜色" style="width:60%"><input type="color" id="colorPicker" style="vertical-align: middle;width: 28%;height: 28px;" value="#000000"></td>
+                    <td><button id="add">添加</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="note">
+            <p>① 直接输入网站名和网址，点击添加按钮即可添加新网址，备注和链接颜色为可选项。已添加的记录，可直接改变选项内容，然后点击更改，即可完成编辑。</p>
+            <p>② 添加网址时默认序号为负值(-1)按顺序追加，如果已经添加了多条记录，则可以在其他记录前后插入，如：添加时调整序号为5，则在6号前面插入新记录。</p>
+            <p>③ 分类名可根据自己的网址分类命名，一般保留默认值即可。</p>
+            <p>设置好后，请刷新主页查看效果。</p>
+            <p>本站采用本地存储，所有数据存在您的电脑中，初始化浏览器，或清除本地存储数据时请先导出链接。（<a href="html/detect.html" target="_blank">检测浏览器环境</a>）</p>
+            <p><b>导出链接</b>可以将设置好的自定义网址导出为文本文件备份，<b>选择文件</b>上传，可以从导出的备份文件恢复。</p>
+        </div>
+    </div>
+</div>S
+<footer>
+    <div class="container inout">
+        <input type="file" id="fileIn" title="选择备份的自定义网址文件">
+        <a href="https://support.qq.com/products/44548" target="_blank">留言反馈</a>
+        <button id="outOff">导出链接</button>
+    </div>
+    
+</footer>
+</body>
+</html>

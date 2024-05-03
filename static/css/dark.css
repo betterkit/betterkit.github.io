@@ -1,0 +1,37 @@
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {color: #ccc;background-color: #282828;}
+    a {color: #999}a:hover{color: #eba}
+    nav{background: #292929;border-bottom: 1px solid #303030;}
+    nav a{color: #888}
+    nav .topbar i{border-left: 1px solid #555;border-right: 1px solid #000}
+    #setbox {background: #222;}
+    #setbox p{border: 1px solid #313233;}
+    #customize {border: 1px solid #313233;}
+    .search-box:hover{box-shadow: 1px 1px 6px #313233;}
+    .search-input {color: #aaa}
+    .search-clear::before {color: #666}
+    .search-hot ul {background:#333;box-shadow: 1px 1px 5px #000;}
+    .search-hot ul li:hover {background-color:#222;color: #eba}
+    .search-engine:before {border-bottom:8px solid #333;}
+    .search-engine {background:#333;box-shadow:0 5px 10px 0 #222;}
+    .search-list li {background:#2a2b2c;border: 1px solid #313233;}
+    main .main_tab li{background: #292929;border:1px solid #282828;color: #999}
+    main .main_tab li.crt{background: linear-gradient(#383838,#282828);border:1px solid #303030;border-bottom: 1px solid #282828;}
+    main .main_list {background: rgba(125, 126, 127, 0.25)}
+    main .main_list li {border: 1px dotted rgba(30, 30, 30, 0.1);border-bottom: none;}
+    main .main_list li:first-child {border-left: 1px solid rgba(30, 30, 30, 0.5);}
+    main .main_list li:last-child {border-right: 1px solid rgba(30, 30, 30, 0.5);}
+    main .main_list ul:last-child li{border-bottom: 1px solid rgba(25, 25, 25, 0.5);}
+    main aside .side_tab {background: linear-gradient(rgba(55, 57, 59),rgba(25, 26, 29));border: 1px solid rgba(30, 30, 30, 0.5);border-bottom: none;}
+    main aside .side_box {border: 1px solid rgba(30, 30, 30, 0.5);border-top: none;background: rgba(125, 126, 127, 0.25)}
+    content .content_tab {border: 1px solid rgba(30, 30, 30, 0.5);background: #292929; border-bottom: none;}
+    content .content_tab li {color: #666;border-bottom: 1px solid #666;}
+    content .content_tab li.crt {color: #999; border-bottom: 1px solid #3f3;}
+    content .content_box {border: 1px solid rgba(30, 30, 30, 0.5);border-top: none;background: rgba(125, 126, 127, 0.25)}
+    footer {color: #666;}
+    footer a{color: #999;}
+    footer .copyright, footer .copyright a{color: #666}
+    #main div{background: #292929;border:1px solid #282828;color: #999;border-bottom: none;}
+    #main ul{border: 1px solid rgba(30, 30, 30, 0.5);border-top: none;background: rgba(125, 126, 127, 0.25)}
+}

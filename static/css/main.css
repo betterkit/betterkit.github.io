@@ -1,0 +1,106 @@
+/*base*/
+.search{
+    height: 40px;width: 1007px;
+    margin: 0 auto;
+    position: relative;
+}
+.search-box {
+    height:40px;
+    display:flex;
+    border-radius: 15px;
+    background: #fff2;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    overflow: hidden;
+}
+.search-box:hover{box-shadow: 0 0 12px #ddd inset;}
+.search-icon {
+    position:absolute;
+    left:15px;
+    top:1px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    border-radius: 23px;
+}
+.search-input {
+    flex:1;
+    height:40px;
+    width:70%;
+    padding-left:65px;
+    background-color: transparent;
+    font-size:1.1rem;
+}
+.search-clear::before {content:'X'}
+.search-clear {
+    position:absolute;
+    right:80px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    top:11px;
+    cursor:pointer;
+    display:none;
+}
+.search-btn {
+    width:80px;
+    height:40px;
+    cursor: pointer;
+    background: url(../image/searchicon.png) no-repeat 30px 10px/22px 22px;
+}
+.search-btn:hover {background-size: 25px 25px;background-position: 29px 9px}
+/*热词*/
+.search-hot {
+    position:absolute;
+    left: 0;text-align: left;
+    margin:1px auto;
+    z-index:100;
+    width:100%;
+}
+.search-hot ul li {line-height:35px;padding:0 5px;border-radius:5px;cursor:pointer}
+.search-hot ul li:first-child {border-radius:5px;}
+.search-hot ul li:last-child {}
+.search-hot ul li:hover {background-color:#f0f0f0}
+.search-hot ul {border-radius:5px;background:#fff;box-shadow: 1px 1px 5px #ccc;margin: 0 60px;max-height: 350px;overflow: hidden;}
+
+/*select default engine*/
+.search-engine:before {
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    top:-15px;
+    left: 15px;
+    border-top:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid #fff;
+    border-left:8px solid transparent;
+}
+.search-engine {
+    box-sizing:border-box;
+    position:absolute;
+    background:#FFFFFF;
+    top:48px;
+    left:0;
+    width:180px;
+    padding:5px;
+    border-radius:5px;
+    box-shadow:0 5px 10px 0 #d8d7d7;
+    transition:all .3s;
+    display: none;
+    z-index:999;
+}
+.search-head {text-align: left;padding-left: 5px}
+.search-list li {
+    width:160px;
+    line-height:40px;
+    margin:5px;
+    background:#f9f9f9;
+    cursor:pointer;
+    border-radius:5px;
+    border: 1px solid #eee;
+}
+.search-list li img {
+    width:45px;
+    height:45px;
+    border-radius:15px;
+    float:left;
+}
