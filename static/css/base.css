@@ -32,37 +32,33 @@ nav #setIcon{}
 header {height: 99px;overflow: hidden;margin: 60px auto 0;}
 header .logo{height: 95px;margin: 0 auto;color: #1b5b; text-align: center;font-size: 95px;font-weight: bold;line-height: 95px}
 header .logo img{max-height: 85px}
+header h1 {font-size: 0;display: none;}
 #search{margin: 10px auto;width: 1020px}
+.search-input::placeholder{text-align: center;font-size: 14px;letter-spacing: 3px;color: #6666;margin-left: -35px}
 /*customize*/
 #customize{width: 1018px;height: 38px;line-height: 38px;position: relative;margin: -5px auto;background: #fff2; border: 1px solid #ccc5; border-radius: 8px;}
 #customize #mysite {text-align: center;}
 #customize #mysite a{margin: 0 10px;}
 #customize #mysite a:first-child{margin-left: 38px}
 /*main nav*/
-.main {height: 350px;overflow: hidden;margin: 15px auto;}
-.main #main_box {width: 100%; text-align: center;float: left;line-height: 42px}
+.main {height: 351px;overflow: hidden;margin: 15px auto;text-align: center;}
 .main .main_tab {margin-bottom: 10px;font-size: 16px;letter-spacing: 2px}
 .main .main_tab li{
     border: 1px dotted #eaeaea66;
     margin: 0 5px;
     background: #dfe0e123;
     float: left; color: #555;cursor: pointer;
-    width: 135px;height: 38px;line-height: 40px;
+    width: 135px;height: 40px;line-height: 38px;
     box-sizing: border-box;
     border-radius: 8px;
 }
 .main .main_tab li:first-child{margin-left: 8px}
 .main .main_tab .crt{border: 1px solid #ccc5;background: #eaeaea55;font-weight: bold;}
 /*main content*/
-.main .main_list {background: #fff2;display: none;height: 301px;border-radius: 8px;overflow: hidden;}
+.main .main_list {background: #fff2;display: none;height: 301px;border-radius: 8px;overflow: hidden;line-height: 42px}
 .main .main_list .loading {margin-top: 135px}
 .main .main_list ul {padding-left: 3px}
-.main .main_list li {
-    border-bottom: 1px dotted #cccc;
-    float: left;height: 43px; width: 135px;
-    margin: 0 5px;
-    box-sizing: border-box;
-}
+.main .main_list li {float: left;border-bottom: 1px dotted #cccc;height: 43px; width: 135px;margin: 0 5px;box-sizing: border-box;}
 .main .main_list.current{display: block;}
 .main .main_list li img{height: 16px;width: 16px;vertical-align: middle;margin: -2px 5px 0 0}
 /*site page*/
