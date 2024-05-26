@@ -1,30 +1,26 @@
 /*public set*/
-body{font-size: 14px;color: #333;background-size: cover;background: #fbfbfb}
+body{font-size: 14px;color: #333;background-size: cover;background: #f7f8f9}
 body,h1,h2,h3,ul,ol,dl,li,form{margin: 0;padding: 0;}
 ul,ol,li,dl,dt,dd{list-style: none;}
 button,input,img{border: none;outline:none;}
-input{
-    width: 90%;
-    height: 25px;
-    border: 1px solid #add;
-    border-radius: 4px;
-    padding: 0 5px;
-}
+input{width: 90%;height: 25px;border: 1px solid #add;border-radius: 4px;padding: 0 5px;}
 button{padding: 5px;margin: 0 5px;border: 1px solid #ccc;cursor: pointer;border-radius: 5px;width: 30%}
 button:hover{background: #dde}
-a{color: inherit;text-decoration: none;}
-a:hover{color: red;}
+a{color: inherit;text-decoration: none;}a:hover{color: red;}
 h1 {font-size: 22px;text-align: center;margin: 15px auto;}
-.container{width: 96%;max-width: 1020px;margin:0 auto;}
-.main {background: #fff;border-radius: 8px;padding: 10px}
+.container{width: 99%;max-width: 1020px;margin:0px auto;}
+.header, .main,.footer{background: #fff;padding: 5px 10px;border-radius: 8px;}
 .fl{float: left;}.fr{float: right;}.cf::after{content: "";display: block;clear: both;}
-header{
-    height: 35px;
-    line-height: 35px;
-    background: rgba(240, 240, 240, .2);
-    border-bottom:1px solid rgba(222, 222, 222, .6);
+.header{
+    height: 25px;
+    line-height: 25px;
+    border-bottom:1px solid #eee;
     color: #999;
 }
+.main {margin: 5px 0;min-height: 88vh}
+.main h2 {font-size: 18px;margin: 15px;}
+.main ul.list {line-height: 30px;}
+.main ul.list li{float: left;margin:5px 15px;font-size: 16px;border-bottom: 1px solid #ccc;min-width: 136px}
 /*链接列表*/
 .weblist{
     width: 100%;
@@ -46,7 +42,7 @@ tr:hover{background: #efefef}
     border-radius: 5px;
     margin-bottom: 10px;
 }
-footer{
+.footer{
     height: 35px;
     color: #999;
     text-align: center;

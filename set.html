@@ -12,12 +12,12 @@
 <script src="static/js/setlink.com.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="container cf">
+<div class="container">
+    <div class="header cf">
         <div class="fl">当前位置：<a href="/">首页</a> -> 自定义网址</div>
-        <div class="fr"><a href="homepage.html">如何设置主页</a></div>
+        <div class="fr"><a href="html/homepage.html">如何设置主页</a></div>
     </div>
-</header>
+</div>
 <div class="container">
     <div class="main">
         <table class="weblist">
@@ -50,17 +50,17 @@
             <p>② 添加网址时默认序号为负值(-1)按顺序追加，如果已经添加了多条记录，则可以在其他记录前后插入，如：添加时调整序号为5，则在6号前面插入新记录。</p>
             <p>③ 分类名可根据自己的网址分类命名，一般保留默认值即可。</p>
             <p>设置好后，请刷新主页查看效果。</p>
-            <p>本站采用本地存储，所有数据存在您的电脑中，初始化浏览器，或清除本地存储数据时请先导出链接。（<a href="html/detect.html" target="_blank">检测浏览器环境</a>）</p>
+            <p>本站采用本地存储，所有数据存在您的电脑中，初始化浏览器，或清除本地存储数据时请先导出链接。</p>
             <p><b>导出链接</b>可以将设置好的自定义网址导出为文本文件备份，<b>选择文件</b>上传，可以从导出的备份文件恢复。</p>
         </div>
+        <div class="inout">
+            <input type="file" id="fileIn" title="选择备份的自定义网址文件">
+            <a href="https://support.qq.com/products/44548" target="_blank">留言反馈</a>
+            <button id="outOff">导出链接</button>
+        </div>
     </div>
-</div>S
+</div>
 <footer>
-    <div class="container inout">
-        <input type="file" id="fileIn" title="选择备份的自定义网址文件">
-        <a href="https://support.qq.com/products/44548" target="_blank">留言反馈</a>
-        <button id="outOff">导出链接</button>
-    </div>
     
 </footer>
 </body>

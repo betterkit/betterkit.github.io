@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>我的主页-自定义网址导航</title>
     <meta name="keywords" content="我的主页,自定义网址导航">
-    <meta name="description" content="我的主页-自定义网址导航，分组分类显示网址，自定义背景色背景图logo模块自由组合">
-    <link rel="stylesheet" type="text/css" href="static/css/base_new.css?v=1122">
-    <link rel="stylesheet" type="text/css" href="static/css/main_new.css">
+    <meta name="description" content="我的主页-自定义网址导航，分组分类显示网址，自定义背景色背景图logo模块自由组合，简单导航，就是好用。办公白领设计师行业推荐比较好用的绿色小清新上网主页。">
+    <link rel="stylesheet" type="text/css" href="static/css/base.css?v=1122">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" href="static/css/dark.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://hm.baidu.com/hm.js?991085ab8ca463554afecc6a6eb465af"></script>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"3FGVxx2NqNfpsX8X",ck:"3FGVxx2NqNfpsX8X"})</script>
 </head>
 <body>
     <nav>
@@ -25,21 +27,18 @@
         </div>
     </nav>
     <div id="setbox" class="hide">
+        <p><label for="setlogo">①标志图片</label>：<input type="url" id="setlogo" placeholder="请输入logo图片地址"><label for="showlogo">生效</label><input type="checkbox" id="showlogo"> <label for="clockColor">②时钟颜色</label>：<input type="color" id="clockColor"> <label for="headerTop">③上边距</label><input type="number" id="headerTop" value="60" min="10" step="5"></p>
         <p>
-            <label for="setlogo">设置标志</label>：<input type="url" id="setlogo" placeholder="请输入logo图片地址">
-            <label for="showlogo">生效</label><input type="checkbox" id="showlogo" checked>
-            <label for="headerTop">上边距</label><input type="number" id="headerTop" value="0" min="0" step="5">
-         </p>
-        <p>
-            <label for="BGimg">背景图片</label>：<input type="url" id="BGimg" placeholder="请输入背景图片地址"><label for="showBGimg">生效</label><input type="checkbox" id="showBGimg" checked>
+            <label for="BGimg">⑤背景图片</label>：<input type="url" id="BGimg" placeholder="请输入背景图片地址"><label for="showBGimg">生效</label><input type="checkbox" id="showBGimg" checked>
             <input type="radio" name="BGmode" id="cover" value="cover"><label for="cover">覆盖</label>
             <input type="radio" name="BGmode" id="repeatX" value="repeat-X"><label for="repeatX">横向</label>
             <input type="radio" name="BGmode" id="repeatY" value="repeat-Y"><label for="repeatY">纵向</label>
             <input type="radio" name="BGmode" id="repeatA" value="repeat"><label for="repeatA">双向</label>
-            # <label for="BGcolorA">背景色1</label><input type="color" id="BGcolorA"><label for="BGcolorB">背景色2</label><input type="color" id="BGcolorB"><label for="BGcolorC">角度</label><input type="number" id="BGcolorC" min="0" max="360" step="5" value="0">
+            <label for="BGcolorA">⑥背景色1</label><input type="color" id="BGcolorA"><label for="BGcolorB">背景色2</label><input type="color" id="BGcolorB"><label for="BGcolorC">角度</label><input type="number" id="BGcolorC" min="0" max="360" step="5" value="0">
         </p>
     </div>
-    <header class="cf" id="header">
+    <header id="header">
+        <h1>简单导航网址大全，自定义实用上网主页</h1>
         <div class="logo web-font"></div>
     </header>
     <div id="search">
@@ -69,4 +68,5 @@
 </html>
 <script src="static/js/calendar.js"></script>
 <script src="static/js/search.com.js"></script>
-<script src="static/js/site.com.js?v=118"></script>
+<script src="static/js/common.com.js"></script>
+<script src="static/js/site.com.js"></script>

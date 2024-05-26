@@ -37,7 +37,7 @@ header h1 {font-size: 0;display: none;}
 .search-input::placeholder{text-align: center;font-size: 14px;letter-spacing: 3px;color: #6666;margin-left: -35px}
 /*customize*/
 #customize{width: 1018px;height: 38px;line-height: 38px;position: relative;margin: -5px auto;background: #fff2; border: 1px solid #ccc5; border-radius: 8px;}
-#customize #mysite {text-align: center;}
+#customize #mysite {text-align: center;white-space: nowrap;}
 #customize #mysite a{margin: 0 10px;}
 #customize #mysite a:first-child{margin-left: 38px}
 /*main nav*/
